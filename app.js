@@ -1,6 +1,14 @@
 // Func1. a sonning ixtiyoriy n-darajasini hisoblovchi power(a, n) nomli funksiya hosil qiling. QY
 // power(3, 5) => 243
 
+// function power(n, d) {
+//   let sum = 1
+//   for (let i = 0; i < d; i++) {
+//     sum *= n
+//   }
+//   return sum
+// }
+// console.log(power(3, 5));
 
 
 
@@ -16,6 +24,16 @@
 // sign(10) => 1
 
 
+// function sign(n) {
+//   if (n > 0) {
+//     return 1
+//   } else if (n < 0) {
+//     return -1
+//   } else {
+//     return 0
+//   }
+// }
+// console.log(sign(-10));
 
 
 // ? __________________________________
@@ -23,16 +41,43 @@
 // numberOfRoots (1, -6, 9) => 1
 
 
+// function numberOfRoots(A, B, C) {
+//   let D = B ** 2 - 4 * A * C
+//   if (D > 0) {
+//     return "2 ta ildiz"
+//   } else if (D < 0) {
+//     return "Ildiz yo'q"
+//   } else {
+//     return "1 ta ildiz"
+//   }
+// }
+// console.log(numberOfRoots(1, -6, 9));
+
 
 // ? __________________________________
 // Func5. Doiraning yuzini hisoblovchi areaCircle(R) nomli funksiya hosil qiling. Doiraning yuzi S = π*R^2 orqali hisoblanadi. QY
 
+
+// function areaCircle(R) {
+//   let S = Math.PI*R**2
+//   return S
+// }
+// console.log(areaCircle(10));
 
 
 // ? __________________________________
 // Func6. A va B sonlari orasidagi sonlar yig'indisini hisoblovchi sumRange(A, B) nomli funksiya hosil qiling. Agar A > B bo'lsa, funksiya 0 qiymat qaytaradi. QY
 // sumRange(8, 10) => 27
 
+
+// function sumRange(A, B) {
+//   let sum = 0
+//   for (let i = A; i <= B; i++) {
+//     sum += i
+//   }
+//   return sum
+// }
+// console.log(sumRange(8, 10));
 
 
 // ? __________________________________
@@ -41,6 +86,21 @@
 // calc(7, 8, “+”) => 15
 
 
+// function calc(A, B, S) {
+//   switch (S) {
+//     case "+":
+//       return A + B
+//     case "-":
+//       return A - B
+//     case "*":
+//       return A * B
+//     case "/":
+//       return A / B
+//     default:
+//       return 0
+//   }
+// }
+// console.log(calc(7, 8, "+"));
 
 
 // ? __________________________________
@@ -48,6 +108,10 @@
 // isEven(10) => true
 
 
+// function isEven(K) {
+//   return K % 2 === 0
+// }
+// console.log(isEven(10));
 
 
 // ? __________________________________
@@ -55,25 +119,34 @@
 // sortABC(10, 5, 8) => 5, 8, 10
 
 
+// function sortABC(A, B, C) {
+//   let max = Math.max(A, B, C)
+//   let min = Math.min(A, B, C)
+//   let mid;
+//   if (A != max && A != min) {
+//     mid = A;
+//   } else if (B != max && B != min) {
+//     mid = B;
+//   } else{
+//     mid = C;
+//   }
+//   return`min: ${min},  mid: ${mid}, max: ${max}`
+// }
+// console.log(sortABC(10, 5, 8));
 
 
 // ? __________________________________
 // Func10. isPowerN(K, N) mantiqiy funksiyasini hosil qiling. (K > 0). Agar K soni N soninig biror darajasi bo'lsa - true, aks xolda false qiymat qaytarilsin. QY
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function isPowerN(K, N) {
+//   let sum = 1;
+//   while (sum < N) {
+//     sum *= K
+//   }
+//   return sum == N
+// }
+// console.log(isPowerN(3, 6));
 
 
 // ! __________________________________
